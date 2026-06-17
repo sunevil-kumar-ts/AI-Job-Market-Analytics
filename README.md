@@ -1,5 +1,4 @@
-# AI-Job-Market-Analytics
-Here's a version under **350 characters**:  **End-to-end Data Analytics project analyzing AI job market trends. Cleaned and transformed data using Python (Pandas), performed analysis with MySQL, and built an interactive Power BI dashboard to explore salary trends, job demand, remote work opportunities, experience levels, and hiring patterns.
+End-to-end Data Analytics project analyzing AI job market trends. Cleaned and transformed data using Python (Pandas), performed analysis with MySQL, and built an interactive Power BI dashboard to explore salary trends, job demand, remote work opportunities, experience levels, and hiring patterns.
 AI Job Market Trends Analytics Dashboard
 
 An end-to-end Data Analytics project focused on analyzing global AI job market trends. The project involved data cleaning and preprocessing using Python (Pandas), analytical querying with MySQL, and interactive dashboard creation in Power BI. The dashboard provides insights into salary trends, job demand, remote work opportunities, experience requirements, and industry hiring patterns within the AI sector.
