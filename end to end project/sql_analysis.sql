@@ -1,0 +1,11 @@
+create database  data_analysis;
+use data_analysis;
+select * from ai_job_market_cleaned;
+SELECT Industry,ROUND(AVG(`Median Salary (USD)`), 2) AS Avg_Salary FROM ai_job_market_cleaned GROUP BY Industry ORDER BY Avg_Salary DESC;
+SELECT Location,SUM(`Job Openings (2024)`) AS Total_Openings FROM ai_job_market_cleaned GROUP BY Location ORDER BY Total_Openings DESC;
+SELECT Location,SUM(`Projected Openings (2030)`) AS Future_Openings FROM ai_job_market_cleaned GROUP BY Location ORDER BY Future_Openings DESC;
+SELECT `Required Education`,ROUND(AVG(`Median Salary (USD)`),2) AS Avg_Salary FROM ai_job_market_cleaned GROUP BY `Required Education` ORDER BY Avg_Salary DESC;
+SELECT Industry,ROUND(AVG(`Automation Risk (%)`),2) AS Avg_Risk FROM ai_job_market_cleaned GROUP BY Industry ORDER BY Avg_Risk DESC;
+SELECT `AI Impact Level`,COUNT(*) AS Total_Jobs FROM ai_job_market_cleaned GROUP BY `AI Impact Level` ORDER BY Total_Jobs DESC;
+SELECT Industry,ROUND(AVG(`Remote Work Ratio (%)`),2) AS Remote_Ratio FROM ai_job_market_cleaned GROUP BY Industry ORDER BY Remote_Ratio DESC;SELECT Industry,ROUND(AVG(`Gender Diversity (%)`),2) AS Diversity FROM ai_job_market_cleaned GROUP BY Industry ORDER BY Diversity DESC;
+SELECT 'Job Title',ROUND(AVG(`Median Salary (USD)`),2) AS Avg_Salary FROM ai_job_market_cleaned GROUP BY 'Job Title' ORDER BY Avg_Salary DESC LIMIT 10;
